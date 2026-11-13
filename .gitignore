@@ -8,5 +8,7 @@ npm-debug.log
 .eslintcache
 
 node_modules
-dist
+# dist is committed on the tapo branch: montiapm:agent installs this fork from a
+# GitHub tarball, which npm unpacks as-is without building. Rebuild it with
+# `npm run build`, then delete the test output the .npmignore lists./
 .envrc
